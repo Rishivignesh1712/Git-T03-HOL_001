@@ -1,0 +1,59 @@
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 ~ (master)
+$ cd /E/Cognizant/git
+bash: cd: /E/Cognizant/git: No such file or directory
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 ~ (master)
+$ cd /E/Cognizant/Git_Handson
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ ls -al
+total 9
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 10:19 ./
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 09:48 ../
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 10:18 .git/
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 10:17 Handson/
+-rw-r--r-- 1 Ris_Tennyson 197121 31 Jun 22 09:55 welcome.txt
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ touch file1.log
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ mkdir log
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Handson/
+        file1.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ touch ~/.gitignore_global
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git config --global core.excludesfile ~/.gitignore_global
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ vi ~/.gitignore_global
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ cat ~/.gitignore_global
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ *.log
+bash: file1.log: command not found
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$  git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Handson/
+        file1.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+

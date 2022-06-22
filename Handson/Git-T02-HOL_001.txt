@@ -1,0 +1,85 @@
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 ~ (master)
+$ cd /E/Cognizant/Git_Handson
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson
+$ git version
+git version 2.36.1.windows.1
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson
+$ git config --global user.name "Rishivignesh J"
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson
+$ git config --global user.email "rishivigneshj1712@gmail.com"
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson
+$ git config --global --list
+user.name=Rishivignesh J
+user.email=rishivigneshj1712@gmail.com
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson
+$ git init
+Initialized empty Git repository in E:/Cognizant/Git_Handson/.git/
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ ls -al
+total 8
+drwxr-xr-x 1 Ris_Tennyson 197121 0 Jun 22 09:54 ./
+drwxr-xr-x 1 Ris_Tennyson 197121 0 Jun 22 09:48 ../
+drwxr-xr-x 1 Ris_Tennyson 197121 0 Jun 22 09:54 .git/
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ echo "Welcome to the version control" >> welcome.txt
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ ls -al
+total 9
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 09:55 ./
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 09:48 ../
+drwxr-xr-x 1 Ris_Tennyson 197121  0 Jun 22 09:54 .git/
+-rw-r--r-- 1 Ris_Tennyson 197121 31 Jun 22 09:55 welcome.txt
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ cat welcome.txt
+Welcome to the version control
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        welcome.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git add welcome.txt
+warning: LF will be replaced by CRLF in welcome.txt.
+The file will have its original line endings in your working directory
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+Aborting commit due to empty commit message.
+hint: Waiting for your editor to close the file...
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git commit -m "first commit"
+[master (root-commit) 0ec934b] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 welcome.txt
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git remote add origin https://github.com/Rishivignesh1712/Firstrepo.git
+
+Ris_Tennyson@DESKTOP-MQBELJ5 MINGW64 /E/Cognizant/Git_Handson (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 252 bytes | 252.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Rishivignesh17
